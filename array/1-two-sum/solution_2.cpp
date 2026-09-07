@@ -1,4 +1,4 @@
-//SOLUTION USING TWO POINTERS
+//SOLUTION USING HASH MAP
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -17,17 +17,14 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<pair<int,int>>v;
+        unordered_map<int,int>mp;
+
         for(int i=0;i<nums.size();i++){
-            v.pb({nums[i],i});
-        }
-        srt(v);
-        for(int i=0,j=nums.size()-1;i<j; ){
-            if(v[i].first+v[j].first==target){
-                return {v[i].second,v[j].second};
-            }
-            else if(v[i].first+v[j].first<target)i++;
-            else j--;
+            int complementary = target - nums[i];
+
+            if(mp.count(complementary)) return {mp[complementary],i};
+
+            mp[nums[i]]=i;
         }
         return {};
     }
