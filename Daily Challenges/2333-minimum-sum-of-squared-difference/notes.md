@@ -1,0 +1,1 @@
+https://leetcode.com/problems/minimum-sum-of-squared-difference/solutions/8564981/greedy-binary-search-on-log-m-python-c-j-vhhk/?envType=daily-question&envId=2026-10-10
