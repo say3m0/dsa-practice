@@ -71,3 +71,4 @@
 - DP approach processes shorter substrings before longer substrings.
 - Expand Around Center must consider both odd and even length palindromes.
 - Both approaches have O(n²) time complexity, but Expand Around Center uses O(1) auxiliary space.
+- REMEMBER THE DP APPROACH AS A BLUEPRINT FOR SOLVING PROBLEMS BASED ON PALINDROME.
